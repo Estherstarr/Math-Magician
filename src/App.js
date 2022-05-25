@@ -1,12 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
-/* eslint-disable */
 
-class App extends Component {
-  constructor(props) {
-    super(props);
-  }
+class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
@@ -15,4 +11,5 @@ class App extends Component {
     );
   }
 }
-  export default App;
+
+export default App;

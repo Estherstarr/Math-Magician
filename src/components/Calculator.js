@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
-/* eslint-disable */
+import React from 'react';
 
-class Calculator extends Component {
-  constructor(props) {
-    super(props);
-  }
+class Calculator extends React.PureComponent {
   render() {
     return (
       <div className="calcMainContainer">
@@ -12,36 +8,36 @@ class Calculator extends Component {
         <div className="calcKeysContainer">
           <div className="calcKeys">
             <div className="calcNumbers">
-              <b>AC</b>
-              <b>+/-</b>
-              <b>%</b>
+              <button type="button">AC</button>
+              <button type="button">+/-</button>
+              <button type="button">%</button>
             </div>
             <div className="calcNumbers">
-              <b>7</b>
-              <b>8</b>
-              <b>9</b>
+              <button type="button">7</button>
+              <button type="button">8</button>
+              <button type="button">9</button>
             </div>
             <div className="calcNumbers">
-              <b>4</b>
-              <b>5</b>
-              <b>6</b>
+              <button type="button">4</button>
+              <button type="button">5</button>
+              <button type="button">6</button>
             </div>
             <div className="calcNumbers">
-              <b>1</b>
-              <b>2</b>
-              <b>3</b>
+              <button type="button">1</button>
+              <button type="button">2</button>
+              <button type="button">3</button>
             </div>
             <div className="calcNumbers footer">
-              <b>0</b>
-              <b>.</b>
+              <button type="button">0</button>
+              <button type="button">.</button>
             </div>
           </div>
           <div className="calcSymbols">
-            <b>÷</b>
-            <b>×</b>
-            <b>-</b>
-            <b>+</b>
-            <b>=</b>
+            <button type="button">÷</button>
+            <button type="button">×</button>
+            <button type="button">-</button>
+            <button type="button">+</button>
+            <button type="button">=</button>
           </div>
         </div>
       </div>
