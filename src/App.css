@@ -49,7 +49,7 @@ b {
   text-align: center;
 }
 
-.calcNumbers.footer{
+.calcNumbers.footer {
   display: grid;
   grid-template-columns: 2fr 1fr;
 }
