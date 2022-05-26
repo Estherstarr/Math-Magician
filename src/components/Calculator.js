@@ -33,11 +33,11 @@ class Calculator extends React.PureComponent {
             </div>
           </div>
           <div className="calcSymbols">
-            <button type="button">÷</button>
-            <button type="button">×</button>
-            <button type="button">-</button>
-            <button type="button">+</button>
-            <button type="button">=</button>
+            <button type="button" className="calcSymbolsColor">÷</button>
+            <button type="button" className="calcSymbolsColor">×</button>
+            <button type="button" className="calcSymbolsColor">-</button>
+            <button type="button" className="calcSymbolsColor">+</button>
+            <button type="button" className="calcSymbolsColor">=</button>
           </div>
         </div>
       </div>

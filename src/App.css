@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-b {
+button {
   font-size: 20px;
   padding: 25px 0;
   font-weight: 600;
@@ -54,14 +54,18 @@ b {
   grid-template-columns: 2fr 1fr;
 }
 
-.calcNumbers b,
-.calcSymbols b {
+.calcNumbers button,
+.calcSymbols button {
   border-right: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
 }
 
 .calcSymbols {
-  background-color: #f5913e;
+  
   text-align: center;
   display: grid;
+}
+
+.calcSymbolsColor{
+  background-color: #f5913e;
 }
