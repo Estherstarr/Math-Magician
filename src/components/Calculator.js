@@ -23,11 +23,11 @@ class Calculator extends React.PureComponent {
   }
 
   render() {
-    const { obj: obj2 } = this.state;
+    const { obj } = this.state;
 
     return (
       <div className="calcMainContainer">
-        <div className="calcDisplay">{obj2.next || obj2.operation || obj2.total || 0 }</div>
+        <div className="calcDisplay">{obj.next || obj.operation || obj.total || 0 }</div>
         <div className="calcKeysContainer">
           <div className="calcKeys">
             <div className="calcNumbers">
