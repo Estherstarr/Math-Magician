@@ -61,11 +61,10 @@ button {
 }
 
 .calcSymbols {
-  
   text-align: center;
   display: grid;
 }
 
-.calcSymbolsColor{
+.calcSymbolsColor {
   background-color: #f5913e;
 }
