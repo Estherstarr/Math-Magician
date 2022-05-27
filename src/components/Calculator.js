@@ -1,5 +1,7 @@
 import React from 'react';
+import Button from './Button';
 import calculate from '../logic/calculate';
+import DisplayResult from './Display';
 
 class Calculator extends React.PureComponent {
   constructor(props) {
@@ -9,13 +11,13 @@ class Calculator extends React.PureComponent {
         total: null,
         next: null,
         operation: null,
-
       },
     };
-    this.handleClick = this.handleClick.bind(this);
+    this.handleButtonClick = this.handleButtonClick.bind(this);
   }
 
-  handleClick(buttonName) {
+  handleButtonClick(e) {
+    const buttonName = e.target.value;
     const { obj } = this.state;
     this.setState({
       obj: calculate(obj, buttonName),
@@ -27,44 +29,11 @@ class Calculator extends React.PureComponent {
 
     return (
       <div className="calcMainContainer">
-        <div className="calcDisplay">{obj.next || obj.operation || obj.total || 0 }</div>
-        <div className="calcKeysContainer">
-          <div className="calcKeys">
-            <div className="calcNumbers">
-              <button type="button" onClick={() => this.handleClick('AC')}>AC</button>
-              <button type="button" onClick={() => this.handleClick('+/-')}>+/-</button>
-              <button type="button" onClick={() => this.handleClick('%')}>%</button>
-            </div>
-            <div className="calcNumbers">
-              <button type="button" onClick={() => this.handleClick('7')}>7</button>
-              <button type="button" onClick={() => this.handleClick('8')}>8</button>
-              <button type="button" onClick={() => this.handleClick('9')}>9</button>
-            </div>
-            <div className="calcNumbers">
-              <button type="button" onClick={() => this.handleClick('4')}>4</button>
-              <button type="button" onClick={() => this.handleClick('5')}>5</button>
-              <button type="button" onClick={() => this.handleClick('6')}>6</button>
-            </div>
-            <div className="calcNumbers">
-              <button type="button" onClick={() => this.handleClick('1')}>1</button>
-              <button type="button" onClick={() => this.handleClick('2')}>2</button>
-              <button type="button">3</button>
-            </div>
-            <div className="calcNumbers footer">
-              <button type="button" onClick={() => this.handleClick('0')}>0</button>
-              <button type="button" onClick={() => this.handleClick('.')}>.</button>
-            </div>
-          </div>
-          <div className="calcSymbols">
-            <button type="button" className="calcSymbolsColor" onClick={() => this.handleClick('÷')}>÷</button>
-            <button type="button" className="calcSymbolsColor" onClick={() => this.handleClick('×')}>×</button>
-            <button type="button" className="calcSymbolsColor" onClick={() => this.handleClick('-')}>-</button>
-            <button type="button" className="calcSymbolsColor" onClick={() => this.handleClick('+')}>+</button>
-            <button type="button" className="calcSymbolsColor" onClick={() => this.handleClick('=')}>=</button>
-          </div>
-        </div>
+        <DisplayResult displayState={obj} />
+        <Button onButtonClick={this.handleButtonClick} />
       </div>
     );
   }
 }
+
 export default Calculator;
