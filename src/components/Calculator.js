@@ -24,6 +24,7 @@ function Calculator() {
 
   return (
     <div className="calcMainContainer">
+      <h2 className="calcText">Lets do some math!</h2>
       <DisplayResult displayState={obj} />
       <Button onButtonClick={handleButtonClick} />
     </div>
