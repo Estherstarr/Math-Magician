@@ -50,9 +50,6 @@ run: ```npm start```
 - Twitter: [@twitterhandle](https://twitter.com/AnibeEsther)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/onwuanibeonome)
 
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](https://github.com/Estherstarr/math-magician/issues).
 
