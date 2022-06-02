@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<nav className="navClass">
+      <h1 className="pageTitle">Math Magicians</h1>
+      </nav>
+`;

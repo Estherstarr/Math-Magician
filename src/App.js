@@ -17,9 +17,6 @@ class App extends React.PureComponent {
           <Route path="calculator" element={<Calculator />} />
 
         </Routes>
-
-        {/* <Calculator /> */}
-        {/* <Home /> */}
       </div>
     );
   }
